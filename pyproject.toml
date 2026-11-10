@@ -1,0 +1,25 @@
+
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gomma-lab"
+version = "0.1.0"
+description = "Data Analytics Laboratory Practice Toolkit"
+readme = "README.md"
+requires-python = ">=3.9"
+license = {file = "LICENSE"}
+dependencies = [
+    "numpy",
+    "matplotlib",
+    "scikit-learn",
+    "pandas",
+    "seaborn",
+    "torch",
+    "torchvision",
+    "pillow"
+]
+
+[tool.setuptools.packages.find]
+include = ["gomma_lab*"]
